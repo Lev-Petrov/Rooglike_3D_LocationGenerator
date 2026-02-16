@@ -21,20 +21,24 @@ public class Room : MonoBehaviour
     [SerializeField] private GameObject doorPref;
     private List<GameObject> doors = new List<GameObject>();
 
+    [Header("Player")]
+    [SerializeField] private string playerTag;
+
 
     private void OnTriggerEnter(Collider coll)
     {
-        if (coll.tag != "GameController") return;
+        if (!coll.CompareTag(playerTag)) return;
 
         OnPlayerEntered?.Invoke();
-        Debug.Log("Гравець зайшов в кімнату: " + name);
+        Debug.Log("Player entered the room: " + name);
     }
 
-    //Замінює стіну на двері
+    // Replaces a wall with a door
     public Vector3 MakeDoor(Vector3 dir)
     {
         Transform wall = null;
 
+        // Determines which wall should be replaced
         if (dir == Vector3.forward) wall = forwardWall;
         else if (dir == Vector3.back) wall = backWall;
         else if (dir == Vector3.right) wall = rightWall;
@@ -42,7 +46,10 @@ public class Room : MonoBehaviour
 
         if (wall == null) return Vector3.zero;
 
+        // Creates a door instead of the wall
         var door = Instantiate(doorPref, wall.position, wall.rotation, transform);
+
+        // Passes a reference to the current room into the Door component
         door.GetComponent<Door>().room = this;
 
         doors.Add(door);
