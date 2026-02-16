@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &956472582429676513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2983051082266096490}
+  - component: {fileID: 3632507463386721623}
+  - component: {fileID: 3034452983734998426}
+  - component: {fileID: 6341524146145406463}
+  - component: {fileID: 9036459366249243065}
+  m_Layer: 0
+  m_Name: LocationGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2983051082266096490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956472582429676513}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1234, y: 0, z: 1.21159}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3632507463386721623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956472582429676513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d411303528e49c4caa0b989b8d2911e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RandomController
+  seed: 0
+  useRandomSeed: 1
+--- !u!114 &3034452983734998426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956472582429676513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc8c454e332dc549be20e5aeaf4d12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainPathGenerator
+  startRoom: {fileID: 5300137848336953808, guid: 587e34ae9e413124e87cabceb5f420f4, type: 3}
+  endRoom: {fileID: 5300137848336953808, guid: 587e34ae9e413124e87cabceb5f420f4, type: 3}
+  rooms:
+  - pref: {fileID: 5300137848336953808, guid: 587e34ae9e413124e87cabceb5f420f4, type: 3}
+    probability: 70
+  - pref: {fileID: 5300137848336953808, guid: 1f1114e6daf308c448d647ffa3bb0c6a, type: 3}
+    probability: 30
+  - pref: {fileID: 5300137848336953808, guid: 726b5b6545cb29843821019203678c51, type: 3}
+    probability: 30
+  roomsCount: 6
+  distanceBtwRooms: 30
+--- !u!114 &6341524146145406463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956472582429676513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8465e18df0a51484bbff8303be633707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ForksGenerator
+  forgProbability: 30
+  maxForkLength: 5
+--- !u!114 &9036459366249243065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956472582429676513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78fb0cc2ccc370479b323f6f71bc71b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PassagesGenerator
+  passageSegments:
+  - {fileID: 4465783624593499574, guid: edf1f305a71a15740b0f347c4e827e09, type: 3}
