@@ -269,42 +269,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3034452983734998426, guid: 49bc249784579104f8db8a76be4fcd2e, type: 3}
-      propertyPath: endRoom
-      value: 
-      objectReference: {fileID: 5300137848336953808, guid: 587e34ae9e413124e87cabceb5f420f4, type: 3}
-    - target: {fileID: 3034452983734998426, guid: 49bc249784579104f8db8a76be4fcd2e, type: 3}
-      propertyPath: startRoom
-      value: 
-      objectReference: {fileID: 5300137848336953808, guid: 587e34ae9e413124e87cabceb5f420f4, type: 3}
-    - target: {fileID: 3034452983734998426, guid: 49bc249784579104f8db8a76be4fcd2e, type: 3}
-      propertyPath: rooms.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3034452983734998426, guid: 49bc249784579104f8db8a76be4fcd2e, type: 3}
-      propertyPath: rooms.Array.data[0].pref
-      value: 
-      objectReference: {fileID: 5300137848336953808, guid: 587e34ae9e413124e87cabceb5f420f4, type: 3}
-    - target: {fileID: 3034452983734998426, guid: 49bc249784579104f8db8a76be4fcd2e, type: 3}
-      propertyPath: rooms.Array.data[1].pref
-      value: 
-      objectReference: {fileID: 5300137848336953808, guid: 1f1114e6daf308c448d647ffa3bb0c6a, type: 3}
-    - target: {fileID: 3034452983734998426, guid: 49bc249784579104f8db8a76be4fcd2e, type: 3}
-      propertyPath: rooms.Array.data[2].pref
-      value: 
-      objectReference: {fileID: 5300137848336953808, guid: 726b5b6545cb29843821019203678c51, type: 3}
-    - target: {fileID: 3034452983734998426, guid: 49bc249784579104f8db8a76be4fcd2e, type: 3}
-      propertyPath: rooms.Array.data[0].probability
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 3034452983734998426, guid: 49bc249784579104f8db8a76be4fcd2e, type: 3}
-      propertyPath: rooms.Array.data[1].probability
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 3034452983734998426, guid: 49bc249784579104f8db8a76be4fcd2e, type: 3}
-      propertyPath: rooms.Array.data[2].probability
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 6341524146145406463, guid: 49bc249784579104f8db8a76be4fcd2e, type: 3}
       propertyPath: forkProbability
       value: 15

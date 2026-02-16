@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8465e18df0a51484bbff8303be633707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ForksGenerator
-  forgProbability: 30
+  forkProbability: 15
   maxForkLength: 5
 --- !u!114 &9036459366249243065
 MonoBehaviour:
