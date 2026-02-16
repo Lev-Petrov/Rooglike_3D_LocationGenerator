@@ -1,6 +1,8 @@
 # Roguelike_3D_LocationGenerator
+
 A location generator for a 3D roguelike. This generator can create rooms of various sizes and contents, and connect them into labyrinths.
-Також в кімнатах можуть спавитися вороги, та влаштовуватися битви. для цього треба взяти один з шаблонів кімнати та замінити компонет Room на BattleRoom, та додати своїх ворогів в BattleConfig
+
+Enemies can also spawn inside rooms and battles can take place there. To do this, you need to take one of the room templates, replace the Room component with BattleRoom, and add your enemies to BattleConfig.
 
 ![Screenshot 1](https://github.com/user-attachments/assets/ca4e49c2-972f-4508-8547-4baae53b6115)
 
